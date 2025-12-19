@@ -331,7 +331,7 @@ section {
   .header {
     padding: 1.5rem 5%;
   }
-
+:root { --header-height: 64px; }
   .nav-links {
     gap: 15px;
   }
@@ -361,6 +361,7 @@ section {
 /* MOBILE *
 /* Responsive: hide full nav, show hamburger */
 @media (max-width: 900px) {
+    :root { --header-height: 64px; }
   .nav-links { display: none; }   /* hide horizontal nav in header */
   .hamburger { display: flex; }   /* show hamburger */
   .hamburger{ margin-right: 1rem; }
